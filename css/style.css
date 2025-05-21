@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #24252A;
+    justify-content: space-between;
+    border-bottom: 2px solid blue;
+    z-index: 9999;
+}
+
+.navbar h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    color: blanchedalmond;
+}
+
+.navbar ul {
+    margin-right: 15px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:blanchedalmond;   
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #24252A;
+    margin: 100px 20px;
+    max-width: 100%;
+    border: 1px solid rgb(254, 254, 254);
+    border-radius: 10px;
+}
+
+.content .preprinted {
+    background-color: rgb(254, 254, 254);
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.content img {
+    position: relative;
+    bottom: 15px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+}
+
+
+
+.content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+.content a {
+    display: block;
+    margin: 1px 150px;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #24252A;
+    color: rgb(254, 254, 254);
+}
+
+.content a:hover {
+    background-color: #6071c7;
+    color: rgb(254, 254, 254);
+}
+
+.content .permanent-selective {
+    background-color: rgb(254, 254, 254);
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.content .permanent-bawah {
+    background-color: rgb(254, 254, 254);
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px;
+}

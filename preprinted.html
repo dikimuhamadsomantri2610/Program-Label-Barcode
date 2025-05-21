@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/preprinted.css">
+    <script src="js/font-barcode/JsBarcode.all.min.js"></script>
+</head>
+
+<body>
+    <div class="form-isidata">
+        <label for="nama">Nama Chceker :</label>
+        <input type="text" name="" id="nama" placeholder="Ucok">
+        <label for="tanggal">Tanggal : </label>
+        <input type="date" name="" id="tanggal">
+        <label for="banyak">Berapa Banyak :</label>
+        <input type="number" name="" id="banyak_awal"><span> ke :
+            <input type="number" name="" id="banyak_akhir"></span>
+        <button type="button">Proses</button>
+        <button id="printButton">Print Data</button> <!-- Tombol untuk mencetak data -->
+    </div>
+    <div class="table-barcode">
+        <table>
+            <tbody id="tableContoh">
+                <tr>
+                    <td colspan="2">Distribution Center YOMART GEDEBAGE</td>
+                    <td id="print_date">Print date :</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <span class="preprinted" id="barcode_preprinted">U-202525030001</span>
+                        <svg id="barcode"></svg>
+                        <span class="preprinted" id="text_barcode_preprinted">U-202525030001</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Checker-Receiving Name : <span id="nama_checker">Ucok</span></td>
+                </tr>
+            </tbody>
+            <tbody id="barcodeContainer">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/barocdejspreprinted.js"></script>
+    <script src="js/preprinted.js"></script>
+    <script>
+        document.getElementById("printButton").addEventListener("click", function () {
+            window.print();
+        });
+    </script>
+</body>
+
+</html>

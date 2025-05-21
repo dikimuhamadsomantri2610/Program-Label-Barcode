@@ -1,0 +1,108 @@
+@media print {
+    @page {
+        margin: 0;
+    }
+    body * {
+        visibility: hidden; /* Sembunyikan semua elemen */
+    }
+    #barcodeContainer, #barcodeContainer * {
+        visibility: visible !important;
+    }
+    #barcodeContainer {
+        position: absolute;
+        margin: 0;
+        left: 0;
+        top: 0;
+        width: 100%; /* Pastikan ukuran penuh */
+    }
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-isidata {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    padding: 10px;
+}
+
+.form-isidata label{
+    display: block;
+}
+
+.form-isidata input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.table-barcode {
+    margin-top: -200px;
+}
+
+table {
+    margin: auto;
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 400px;
+    height: 200px;
+}
+
+table tr td {
+    border: 1px solid black;
+}
+
+tr:nth-child(1) td:nth-child(1) {
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+
+}
+
+tr:nth-child(1) td:nth-child(2) {
+    width: 104px;
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 10px;
+}
+
+tr:nth-child(2) td:nth-child(1) {
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+}
+tr:nth-child(3) td:nth-child(1) {
+    height: 25px;
+    font-size: 10px;
+    padding: 5px;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.preprinted {
+    display: block;
+}
+#barcode_preprinted {
+    display: none;
+}
+svg {
+
+}
+#text_barcode_preprinted {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
